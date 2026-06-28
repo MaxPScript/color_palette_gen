@@ -39,11 +39,74 @@
 				<h1>Немного о цвете и цветовых сочетаниях...</h1>
 				<h3></h3>
 				<p>
-					Двигая ползунки выберите базовый цвет. Затем нажмите кнопку "Готово".
+					Двигая ползунки выберите базовый цвет. Затем нажмите кнопку "Готово!".
 				</p>
 			</header>
-			<main class="main"></main>
-			<footer class="footer"></footer>
+			<main class="main">
+				<section class="sliders">
+					<div class="slider slider_red">
+						<span class="slider_label">🔴 R</span>
+						<input
+							type="range"
+							id="slider_red_id"
+							min="0"
+							max="255"
+							value="0"
+							step="1"
+						/>
+						<span
+							class="slider_value"
+							id="slider_value_id"
+							>0</span
+						>
+					</div>
+					<div class="slider slider_green">
+						<span class="slider_label">🟢 G</span>
+						<input
+							type="range"
+							id="slider_green_id"
+							min="0"
+							max="255"
+							value="125"
+							step="1"
+						/>
+						<span
+							class="slider_value"
+							id="slider_value_id"
+							>125</span
+						>
+					</div>
+					<div class="slider slider_blue">
+						<span class="slider_label">🔵 B</span>
+						<input
+							type="range"
+							id="slider_blue_id"
+							min="0"
+							max="255"
+							value="255"
+							step="1"
+						/>
+						<span
+							class="slider_value"
+							id="slider_value_id"
+							>255</span
+						>
+					</div>
+				</section>
+				<button>Готово!</button>
+			</main>
+			<footer class="footer">
+				<p class="copyright">
+					<span> 2026 © WebDev </span>
+					<!-- <a href="#"> -->
+					<img
+						src="./node_modules/@maxmov/assets/icons/wa.svg"
+						alt="whatsapp icon"
+					/>
+					<span> +7(926)604-66-41 </span>
+					<!-- </a> -->
+				</p>
+			</footer>
 		</div>
 	</body>
 	<script

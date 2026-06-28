@@ -1,0 +1,14 @@
+.main {
+	margin: auto;
+	display: grid;
+}
+.slider {
+	display: flex;
+	gap: 1em;
+	.slider_value {
+		width: 2em;
+	}
+}
+[type="range"] {
+	margin: auto;
+}
