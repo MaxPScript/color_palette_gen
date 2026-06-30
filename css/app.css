@@ -3,11 +3,16 @@ body {
 }
 .app {
 	display: grid;
-	gap: 0.7em;
+	gap: 2em;
 	/* height: 100%; */
 	margin: 1.5em;
 	padding: 1em;
 	border-radius: 1em;
 	background-color: hsl(36, 90%, 80%);
 	box-shadow: 3px 3px 2px hsl(0 50% 0% / 0.2);
+}
+.header,
+.main,
+.footer {
+	border: 5px dashed hsl(200 50% 50% / 0.2);
 }

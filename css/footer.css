@@ -8,9 +8,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 1em;
+	gap: 1.5em;
 	img {
 		border-radius: 50%;
 		border-bottom-left-radius: 0px;
+		width: 2.5ch;
+		display: initial;
 	}
 }

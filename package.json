@@ -5,14 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "pages": "pnpm build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.32.0",
   "dependencies": {
-    "@maxmov/css": "workspace:*",
-    "@maxmov/assets": "workspace:*"
+    "@maxmov/assets": "workspace:*",
+    "@maxmov/css": "workspace:*"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^8.1.0"
   }
 }
