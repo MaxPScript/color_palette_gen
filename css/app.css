@@ -1,11 +1,13 @@
 body {
 	background-color: hsl(36, 100%, 90%);
+	padding: 1.5em;
 }
 .app {
 	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 	gap: 2em;
-	/* height: 100%; */
-	margin: 1.5em;
+	height: 100%;
+	/* margin: 1.5em; */
 	padding: 1em;
 	border-radius: 1em;
 	background-color: hsl(36, 90%, 80%);
