@@ -3,6 +3,7 @@
 	padding: 0.5em;
 	border-radius: 1em;
 	font-size: 0.8em;
+	align-self: end;
 }
 .copyright {
 	display: flex;

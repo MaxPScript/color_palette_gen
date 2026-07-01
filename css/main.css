@@ -5,6 +5,7 @@
 	gap: 1em;
 	.sliders {
 		display: grid;
+		gap: 1em;
 	}
 	button {
 		border-radius: 1em;
@@ -15,6 +16,17 @@
 	button:hover {
 		cursor: pointer;
 	}
+	transform-style: preserve-3d;
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main,
+.main_back {
+	position: absolute;
+	width: -webkit-fill-available;
+}
+/* This class is toggled by JavaScript */
+.main.is-flipped {
+	transform: rotateY(180deg);
 }
 .slider {
 	display: flex;
