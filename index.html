@@ -43,65 +43,68 @@
 				</p>
 			</header>
 			<main class="main">
-				<section class="sliders">
-					<div class="slider slider_red">
-						<div class="slider_label_wrapper">
-							<span>R</span>
-							<span class="slider_label slider_label_red"> </span>
+				<div class="main_flip_card_container">
+					<section class="sliders">
+						<div class="slider slider_red">
+							<div class="slider_label_wrapper">
+								<span>R</span>
+								<span class="slider_label slider_label_red"> </span>
+							</div>
+							<input
+								type="range"
+								id="slider_red_id"
+								min="0"
+								max="255"
+								value="0"
+								step="1"
+							/>
+							<span
+								class="slider_value"
+								id="value_red_id"
+								>0</span
+							>
 						</div>
-						<input
-							type="range"
-							id="slider_red_id"
-							min="0"
-							max="255"
-							value="0"
-							step="1"
-						/>
-						<span
-							class="slider_value"
-							id="value_red_id"
-							>0</span
-						>
-					</div>
-					<div class="slider slider_green">
-						<div class="slider_label_wrapper">
-							<span>G</span>
-							<span class="slider_label slider_label_green"></span>
+						<div class="slider slider_green">
+							<div class="slider_label_wrapper">
+								<span>G</span>
+								<span class="slider_label slider_label_green"></span>
+							</div>
+							<input
+								type="range"
+								id="slider_green_id"
+								min="0"
+								max="255"
+								value="125"
+								step="1"
+							/>
+							<span
+								class="slider_value"
+								id="value_green_id"
+								>125</span
+							>
 						</div>
-						<input
-							type="range"
-							id="slider_green_id"
-							min="0"
-							max="255"
-							value="125"
-							step="1"
-						/>
-						<span
-							class="slider_value"
-							id="value_green_id"
-							>125</span
-						>
-					</div>
-					<div class="slider slider_blue">
-						<div class="slider_label_wrapper">
-							<span>B</span>
-							<span class="slider_label slider_label_blue"></span>
+						<div class="slider slider_blue">
+							<div class="slider_label_wrapper">
+								<span>B</span>
+								<span class="slider_label slider_label_blue"></span>
+							</div>
+							<input
+								type="range"
+								id="slider_blue_id"
+								min="0"
+								max="255"
+								value="255"
+								step="1"
+							/>
+							<span
+								class="slider_value"
+								id="value_blue_id"
+								>255</span
+							>
 						</div>
-						<input
-							type="range"
-							id="slider_blue_id"
-							min="0"
-							max="255"
-							value="255"
-							step="1"
-						/>
-						<span
-							class="slider_value"
-							id="value_blue_id"
-							>255</span
-						>
-					</div>
-				</section>
+					</section>
+				</div>
+
 				<button id="btn_id">Готово!</button>
 			</main>
 			<section class="main_back">here will be palettes...</section>

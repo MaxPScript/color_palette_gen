@@ -23,3 +23,8 @@ sliderGreen.addEventListener("input", updateColor);
 sliderBlue.addEventListener("input", updateColor);
 //
 updateColor();
+//
+// function flipCard() {
+// 	const card = document.querySelector(".main");
+// 	card.classList.toggle("is-flipped");
+// }

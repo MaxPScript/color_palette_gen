@@ -11,23 +11,27 @@
 		border-radius: 1em;
 		width: min-content;
 		margin: auto;
-		padding: 1em 2em;
+		padding: 0.8em 2em;
 	}
 	button:hover {
 		cursor: pointer;
 	}
-	transform-style: preserve-3d;
-	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	width: -webkit-fill-available;
+	/* transform-style: preserve-3d;
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.main,
+/* .main,
 .main_back {
 	position: absolute;
-	width: -webkit-fill-available;
+	backface-visibility: hidden;
 }
-/* This class is toggled by JavaScript */
-.main.is-flipped {
+.main_back {
 	transform: rotateY(180deg);
-}
+} */
+/* This class is toggled by JavaScript */
+/* .main.is-flipped {
+	transform: rotateY(180deg);
+} */
 .slider {
 	display: flex;
 	align-items: center;

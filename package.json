@@ -15,7 +15,8 @@
   "packageManager": "pnpm@10.32.0",
   "dependencies": {
     "@maxmov/assets": "workspace:*",
-    "@maxmov/css": "workspace:*"
+    "@maxmov/css": "workspace:*",
+    "@maxmov/flipping_card": "workspace:*"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
