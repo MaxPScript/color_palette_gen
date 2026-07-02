@@ -1,3 +1,6 @@
+import "../node_modules/@maxmov/flipping_card/index.js";
+// import "@maxmov/flipping_card";
+//
 const sliderRed = document.getElementById("slider_red_id");
 const sliderGreen = document.getElementById("slider_green_id");
 const sliderBlue = document.getElementById("slider_blue_id");
