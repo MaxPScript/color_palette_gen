@@ -33,11 +33,13 @@
                     // width: 100%;
                     // height: 100%;
                     backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
 
                 }
                 .front {
                     display: grid;
                     gap: 1em;
+                    transform: rotateY(0deg);
                 }
                 .back {
                     display: grid;
