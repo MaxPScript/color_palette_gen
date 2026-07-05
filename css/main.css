@@ -9,16 +9,21 @@
 	}
 	button {
 		border-radius: 1em;
-		width: min-content;
-		margin: auto;
+		/* width: min-content; */
+		/* margin: auto; */
 		padding: 0.8em 2em;
 	}
 	button:hover {
 		cursor: pointer;
 	}
-	width: -webkit-fill-available;
+	width: 100%;
+	/* width: -webkit-fill-available; */
 	/* transform-style: preserve-3d;
 	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+[slot] {
+	/* display: grid; */
+	/* gap: 1em; */
 }
 /* .main,
 .main_back {

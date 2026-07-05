@@ -1,22 +1,32 @@
-body {
-	background-color: hsl(36, 100%, 90%);
-	padding: 1.5em;
-}
-.app {
-	display: grid;
-	grid-template-rows: min-content 1fr min-content;
-	gap: 2em;
-	place-items: center;
-	height: 100%;
-	/* margin: 1.5em; */
-	padding: 1em;
-	border-radius: 1em;
-	background-color: hsl(36, 90%, 80%);
-	box-shadow: 3px 3px 2px hsl(0 50% 0% / 0.2);
-	perspective: 1000px;
-}
-.header,
-.main,
-.footer {
-	border: 5px dashed hsl(200 50% 50% / 0.2);
+@layer reset, app, flippingcard;
+/* @import "../node_modules/@maxmov/css/reset.css"; */
+/* @layer reset {
+} */
+@layer app {
+	body {
+		background-color: hsl(36, 100%, 90%);
+		padding: 1.5em;
+		/* height: 120%; */
+		/* position: absolute; */
+	}
+	.app {
+		display: grid;
+		grid-template-rows: min-content 1fr min-content;
+		gap: 2em;
+		place-items: center;
+		height: 100%;
+		margin: 1.5em;
+		padding: 1em;
+		border-radius: 1em;
+		background-color: hsl(36, 90%, 80%);
+		box-shadow: 3px 3px 2px hsl(0 50% 0% / 0.2);
+		perspective: 1000px;
+	}
+	.header,
+	.main,
+	.footer {
+		border: 5px dashed hsl(200 50% 50% / 0.2);
+	}
+	flippin-card {
+	}
 }

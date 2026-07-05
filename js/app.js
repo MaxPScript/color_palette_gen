@@ -7,7 +7,8 @@ const sliderBlue = document.getElementById("slider_blue_id");
 const valueRed = document.getElementById("value_red_id");
 const valueGreen = document.getElementById("value_green_id");
 const valueBlue = document.getElementById("value_blue_id");
-const btn = document.getElementById("btn_id");
+const btnFront = document.getElementById("front_btn_id");
+const btnBack = document.getElementById("back_btn_id");
 //
 function updateColor() {
 	const r = sliderRed.value;
@@ -18,7 +19,7 @@ function updateColor() {
 	valueGreen.textContent = g;
 	valueBlue.textContent = b;
 	//
-	btn.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+	btnFront.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 //
 sliderRed.addEventListener("input", updateColor);
@@ -31,3 +32,12 @@ updateColor();
 // 	const card = document.querySelector(".main");
 // 	card.classList.toggle("is-flipped");
 // }
+const card = document.getElementById("flippin-card_id");
+btnFront.addEventListener("click", (ev) => {
+	console.log(card);
+	card.flip();
+});
+btnBack.addEventListener("click", (ev) => {
+	console.log(card);
+	card.flip();
+});
