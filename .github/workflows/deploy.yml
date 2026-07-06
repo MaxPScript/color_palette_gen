@@ -12,10 +12,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ../../../../..
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,15 +20,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: pnpm
 
-      - name: Enable corepack (pnpm)
+      - name: Enable Corepack (pnpm)
         run: corepack enable
 
       - name: Install dependencies (workspace root)
         run: pnpm install --frozen-lockfile
 
-      - name: Build only this app
+      - name: Build app
         run: pnpm --filter color_palette_gen build
 
       - name: Deploy to GitHub Pages
