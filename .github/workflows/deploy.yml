@@ -12,10 +12,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,7 +19,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -31,13 +27,13 @@ jobs:
           node-version: 24
           cache: pnpm
 
-      - name: Install dependencies (workspace root)
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build all workspaces
+      - name: Build
         run: pnpm -r build
 
-      - name: Build target app (optional override)
+      - name: Build target app
         run: pnpm --filter ./apps/colors/drafts/color_palette_gen build
 
       - name: Deploy
